@@ -1,0 +1,14 @@
+Step: build-step-credential-initializer:
+
+{"level":"warn","ts":1548953154.9681678,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1548953154.9686656,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-0:
+
+{"level":"warn","ts":1548953155.9291792,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1548953157.1725883,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/midokura-bot/environment-midokura-ci-cluster-staging.git\" @ \"595f39dbc42e04ceb91f4743c5125b1b931f7856\" in path \"/workspace\""}
+Step: build-step-build:
+
+Adding missing Helm repo: jenkins-x http://chartmuseum.jenkins-x.io
+Successfully added Helm repository jenkins-x.
+Adding missing Helm repo: releases http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository releases.
