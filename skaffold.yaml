@@ -7,7 +7,7 @@ build:
     docker: {}
   tagPolicy:
     envTemplate:
-      template: '{{.DOCKER_REGISTRY}}/alejandroandreu/jx-test:{{.VERSION}}'
+      template: '{{.DOCKER_REGISTRY}}/stone-bongo-229410/jx-test:{{.VERSION}}'
   local: {}
 deploy:
   kubectl: {}
@@ -18,7 +18,7 @@ profiles:
     - docker: {}
     tagPolicy:
       envTemplate:
-        template: '{{.DOCKER_REGISTRY}}/alejandroandreu/jx-test:{{.DIGEST_HEX}}'
+        template: '{{.DOCKER_REGISTRY}}/stone-bongo-229410/jx-test:{{.DIGEST_HEX}}'
     local: {}
   deploy:
     helm:
@@ -26,5 +26,5 @@ profiles:
       - name: jx-test
         chartPath: charts/jx-test
         setValueTemplates:
-          image.repository: '{{.DOCKER_REGISTRY}}/alejandroandreu/jx-test'
+          image.repository: '{{.DOCKER_REGISTRY}}/stone-bongo-229410/jx-test'
           image.tag: '{{.DIGEST_HEX}}'
